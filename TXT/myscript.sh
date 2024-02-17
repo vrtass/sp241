@@ -5,7 +5,7 @@
 # useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# REV31: Wed 31 Jan 2024 17:00
+# REV32: Sun 18 Feb 2024 05:00
 # REV30: Tue 28 Feb 2023 09:00
 # REV29: Mon 13 Feb 2023 13:30
 # REV19: Sun 05 Feb 2023 20:00
@@ -109,8 +109,8 @@ echo "sha256sum -c $SHA"
 sha256sum -c $SHA
 
 echo "# ################# SIGNING CHECKSUM ######### ######### ########"
-echo "gpg --output $SHA.asc --armor --sign --detach-sign $SHA"
-gpg --output $SHA.asc --armor --sign --detach-sign $SHA
+echo "gpg --output $SHA.asc --armor --sign --local-user $REC2 --detach-sign $SHA"
+gpg --output $SHA.asc --armor --sign --local-user $REC2 --detach-sign $SHA
 
 echo "# ################# VERIFY ######### ######### ######### ########"
 echo "gpg --verify $SHA.asc $SHA"
