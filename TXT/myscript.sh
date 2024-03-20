@@ -5,7 +5,7 @@
 # useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# REV32: Sun 18 Feb 2024 05:00
+# REV33: Wed 20 Mar 2024 17:00
 # REV30: Tue 28 Feb 2023 09:00
 # REV29: Mon 13 Feb 2023 13:30
 # REV19: Sun 05 Feb 2023 20:00
@@ -16,7 +16,7 @@
 # You new to set "REC2" with your own Public-Key Identity!
 # Check it out with "gpg --list-key"
 # ####################### Replace REC2 ####
-REC2="E4052880B527C4ED"
+REC2="VRTASS"
 # ####################### ####### #### ####
 # REC1: public key
 REC1="63FB12B215403B20"
